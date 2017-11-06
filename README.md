@@ -30,13 +30,15 @@ Introductory Exercises on OpenCV
 
 2. The values of the pixel at (20,25) in the RGB, YCbCr and HSV versions of the image are:
 
-  **RGB value at (20,25) is  [106 122 225]**
-  Each channel in the RGB colorspace ranges from 0-255.
+    **RGB value at (20,25) is  [106 122 225]**
+    Each channel in the RGB colorspace ranges from 0-255.
   
-  **YCbCr value at (20,25) is  [151 181 103]**
-  Y channel in the YCbCr colorspace ranges from 0-255.
+    **YCbCr value at (20,25) is  [151 181 103]**
+    Each channel in the YCbCr colorspace ranges from 0-255.
   
-  **HSV value at (20,25) is  [  4 135 225]**
+    **HSV value at (20,25) is  [  4 135 225]**
+    HSV values range from [0,360] 
+    
   
   
    
