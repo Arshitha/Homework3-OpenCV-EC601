@@ -17,6 +17,7 @@ def TemplateMatching(src, temp, stepsize): # src: source image, temp: template i
             var_s = 0;
             corr = 0;
             # Calculate the mean and variance of source image pixel values inside window
+            mean_src_win = np.mean(src.shape[i:i+temp.shape[0], j:j+temp.shape[1]])
             # ------------------ Put your code below ------------------ 
             
             # Calculate normalized correlation coefficient (NCC) between source and template
