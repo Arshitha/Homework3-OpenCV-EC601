@@ -6,8 +6,8 @@ def TemplateMatching(src, temp, stepsize): # src: source image, temp: template i
     var_t = 0;
     location = [0, 0];
     # Calculate the mean and variance of template pixel values
-    mean_temp = np.mean(temp)
-    var_temp = np.var(temp)
+    mean_t = np.mean(temp)
+    var_t = np.var(temp)
                     
     max_corr = 0;
     # Slide window in source image and find the maximum correlation
@@ -17,20 +17,21 @@ def TemplateMatching(src, temp, stepsize): # src: source image, temp: template i
             var_s = 0;
             corr = 0;
             # Calculate the mean and variance of source image pixel values inside window
-            mean_src_win = np.mean(src.shape[i:i+temp.shape[0], j:j+temp.shape[1]])
+            mean_s = np.mean(src[i:i+temp.shape[0], j:j+temp.shape[1]])
+            var_s = np.var(src[i:i+temp.shape[0], j:j+temp.shape[1]])
             # ------------------ Put your code below ------------------ 
             
             # Calculate normalized correlation coefficient (NCC) between source and template
             # ------------------ Put your code below ------------------ 
-            
+            corr = ((src[i,j] - mean_s) * (temp[i,j] - mean_t))/(var_s*var_t)
             if corr > max_corr:
-                max_corr = corr;
-                location = [i, j];
+                max_corr = corr
+                location = [i, j]
     return location
 
 # load source and template images
 source_img = cv2.imread('source_img.jpg',0) # read image in grayscale
-temp = cv2.imread('template.jpg',0) # read image in grayscale
+temp = cv2.imread('template_img.jpg',0) # read image in grayscale
 location = TemplateMatching(source_img, temp, 20);
 print(location)
 match_img = cv2.cvtColor(source_img, cv2.COLOR_GRAY2RGB)
