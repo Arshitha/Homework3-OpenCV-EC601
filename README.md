@@ -39,6 +39,14 @@ Introductory Exercises on OpenCV
     **HSV value at (20,25) is  [  4 135 225]**
     HSV values range from [0,360] 
     
+    
+3. i. Exercise 3 folder contains the noise.py code and the resulting images after running the code. 
+
+   ii. Gaussian filter works better for gaussian noise while median filter works better for salt and pepper noise. 
+
+
+4. i. 
+    
   
   
    
