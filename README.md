@@ -38,16 +38,18 @@ Introductory Exercises on OpenCV
   
     **HSV value at (20,25) is  [  4 135 225]**
     HSV values range from [0,360] 
+
+## Exercise 3
     
-    
-3. i. Exercise 3 folder contains the noise.py code and the resulting images after running the code. 
+1. Exercise 3 folder contains the noise.py code and the resulting images after running the code. 
 
-   ii. Gaussian filter works better for gaussian noise while median filter works better for salt and pepper noise. 
+2. Gaussian filter works better for gaussian noise while median filter works better for salt and pepper noise. 
 
+## Exercise 4
 
-4. ii. **Disadavantages of Binary Thresholding:** Binary thresholding uses only two intensity values, that is, all pixels above the threshold value go to 1 and the rest are set to zero. And as a result, information about changes in illumination is lost, unlike in adaptive thresholding.
+2. **Disadavantages of Binary Thresholding:** Binary thresholding uses only two intensity values, that is, all pixels above the threshold value go to 1 and the rest are set to zero. And as a result, information about changes in illumination is lost, unlike in adaptive thresholding.
 
-   iii. Other thresholding operations use a global threshold, adaptive thresholding varies the threshold dynamically over the image. It takes into account changes in lighting conditions resulting from strong illumination gradients or shadows.
+3. Other thresholding operations use a global threshold, adaptive thresholding varies the threshold dynamically over the image. It takes into account changes in lighting conditions resulting from strong illumination gradients or shadows.
     
   
   
